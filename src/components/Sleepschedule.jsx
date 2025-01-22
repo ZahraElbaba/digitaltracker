@@ -5,7 +5,7 @@ const SleepTracker = ({ startTracking }) => {
   return (
     <div style={{ padding: "20px", marginBottom: "20px" }} className="container">
       <h2>Sleep Tracker</h2>
-      <p>Sleep time: 10:30 PM - 05:15 AM</p>
+      <p>Sleep time: 10:30 PM - 05:30 AM</p>
       <button onClick={startTracking}>
         Start Tracking
       </button>
