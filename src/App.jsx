@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from "react";
 import HabitList from "./components/HabitList";
 import CardKPI from "./components/card";
-import CurrentDate from "./components/currentDate";
 import "./App.css";
+import TimeTracker from "./components/Timetracker";
+import SleepTracker from "./components/Sleepschedule";
+import Renderdiv from "./components/Renderediv";
 
 
 const App = () => {
@@ -136,7 +138,7 @@ const App = () => {
     <CardKPI title='Pulse' content='109' unit='BPM'/>
     <h2>Debugging purposes</h2>
     <CardKPI title='Calories Burnt' content='1298' unit='Kcal'/>
-    <CurrentDate />
+    <Renderdiv />
     </>
   );
 };
