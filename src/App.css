@@ -1,5 +1,8 @@
+body{
+  background-color: #FEFFEA; 
+}
 .app-container {
-  background-color: #FEFFEA;  
+  background-color: #FEFFEA;
   height: 100vh;           
   display: flex;
   flex-direction: column;
@@ -76,4 +79,15 @@ button {
 
 .habit-day label {
   margin-left: 5px;
+}
+.health-section{
+  display: flex;
+  flex-wrap:wrap;
+  gap:20px;
+  align-items:flex-start;
+  width:80%;
+  margin-left:15%;
+  border-radius:10px;
+  height:fit-content;
+
 }
