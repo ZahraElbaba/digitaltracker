@@ -6,7 +6,7 @@ const TimeTracker = ({ tracking, stopTracking }) => {
   const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
-    if (!tracking) return; // Do not update time if tracking is stopped
+    //if (!tracking) return; // Do not update time if tracking is stopped
 
     const interval = setInterval(() => {
       const now = new Date();
