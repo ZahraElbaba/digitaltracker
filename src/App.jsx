@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
 import HabitList from "./components/HabitList";
+import CardKPI from "./components/card";
 import "./App.css";
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
   };
 
   return (
+    <>
     <div className="app-container">
       <h1>Habit Tracker</h1>
       <div className="habit-input-container">
@@ -70,6 +72,10 @@ const App = () => {
       </div>
       <HabitList habits={habits} onUpdateHabit={updateHabit} onDeleteHabit={handleDeleteHabit} />
     </div>
+    <CardKPI title='Pulse' content='109' unit='BPM'/>
+    <h2>Debugging purposes</h2>
+    <CardKPI title='Calories Burnt' content='1298' unit='Kcal'/>
+    </>
   );
 };
 
