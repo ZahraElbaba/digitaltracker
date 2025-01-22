@@ -1,43 +1,41 @@
 // src/components/HabitItem.jsx
 import React from "react";
 
-const daysOfWeek = [
-  "Mon",
-  "Tue",
-  "Wed",
-  "Thu",
-  "Fri",
-  "Sat",
-  "Sun",
-];
+const HabitItem = ({ habit, onUpdateHabit, onDeleteHabit, type }) => {
+  const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-const HabitItem = ({ habit, onUpdateHabit, onDeleteHabit }) => {
-  const handleCheckboxChange = (dayIndex) => (e) => {
-    const completed = e.target.checked;
-    onUpdateHabit(habit.id, dayIndex, completed);
-  };
-
-  const handleDeleteClick = () => {
-    onDeleteHabit(habit.id); // Call the onDeleteHabit function passed as a prop
+  const handleCheckboxChange = (index) => {
+    const updatedHistory = [...habit.history];
+    updatedHistory[index] = !updatedHistory[index]; // Toggle the day status
+    onUpdateHabit(habit.id, index, updatedHistory[index], type); // Update habit state
   };
 
   return (
     <div className="habit-item">
       <div className="habit-name">
         <span>{habit.name}</span>
-        <button className="delete-btn" onClick={handleDeleteClick}>Delete</button>
       </div>
       <div className="habit-days">
-        {daysOfWeek.map((day, index) => (
-          <label key={index} className="habit-day">
+        {habit.history.map((status, index) => (
+          <div key={index} className="habit-day">
             <input
               type="checkbox"
-              checked={habit.history[index]}
-              onChange={handleCheckboxChange(index)}
+              checked={status}
+              onChange={() => handleCheckboxChange(index)} // Toggling the completion state
             />
-            {day}
-          </label>
+            <label>{daysOfWeek[index]}</label>
+          </div>
         ))}
+      </div>
+
+      {/* Place delete button after the days of the week */}
+      <div className="delete-container">
+        <button
+          className="delete-btn"
+          onClick={() => onDeleteHabit(habit.id, type)} // Pass habit id and type for deletion
+        >
+          Delete
+        </button>
       </div>
     </div>
   );
