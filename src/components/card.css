@@ -4,7 +4,7 @@
     transition: 0.5ms;
     transform:translateY(-9px);
     background-color: #A1EEBD;
-    width:270px;
+    width:320px;
     height:150px;
     padding:10px;
     flex-direction:column;
@@ -28,16 +28,16 @@
 .white-strip{
     background-color: white;
     width:25px;
-    height:24px;
+    height:27px;
     border-radius:50%;
     padding:10px;
 }
-.title{
-    font-size:1.5em;
+.sec-title{
+    font-size:2em;
     display:inline-block;    
 }
 .hero-content{
-    font-size: 2.5em;
+    font-size: 3em;
 }
 .inner-content{
     text-align: center;

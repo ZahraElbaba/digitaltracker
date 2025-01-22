@@ -10,7 +10,7 @@ function CardKPI(props){
     <div className="box-card-container">
         <div className='main-title'>
         <span className="white-strip">{icon}</span>
-        <span className="title">{title}</span>
+        <span className="sec-title">{title}</span>
         </div>
         <br></br>
         <span className="inner-content">

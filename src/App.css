@@ -17,6 +17,7 @@ body{
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
+  
 }
 
 .tracker {
@@ -90,4 +91,13 @@ button {
   border-radius:10px;
   height:fit-content;
 
+}
+
+
+@media screen and (max-width: 600px) {
+  .tracker-container{
+    flex-wrap:wrap;
+    margin-left:10%;
+  }
+  
 }
