@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import HabitList from "./components/HabitList";
 import CardKPI from "./components/card";
 import "./App.css";
+import TimeTracker from "./components/Timetracker";
+import SleepTracker from "./components/Sleepschedule";
+import Renderdiv from "./components/Renderediv";
 
 
 const App = () => {
@@ -137,6 +140,7 @@ const App = () => {
     <CardKPI title='Total Steps' content='1298' unit='Kcal' icon="&#128293;"/>
     </div>
 
+    <Renderdiv />
     </>
   );
 };
