@@ -22,6 +22,12 @@ function Sports() {
     {id:3,goal:"Stay Fit"},
 
   ]
+  const levels = [
+    {id: 1, level: "Beginner"},
+    {id: 2, level: "Intermediate"},
+    {id: 3, level: "Advanced"},
+  ];
+  
   
   const listoftypes = types.map(type => (
     <label key={type.id}>
@@ -40,7 +46,15 @@ function Sports() {
       <input type="checkbox" value={goal.goal} /> {goal.goal}
     </label>
   ));
-  
+
+  const listoflevels = levels.map(level => (
+    <label key={level.id}>
+      <input type="checkbox" value={level.level} /> {level.level}
+    </label>
+  ));
+
+
+
   return (
     <>
     <div className="sports-tracker">
@@ -55,6 +69,10 @@ function Sports() {
       <div className="list-of-options">
         <h3 className="sports-title">Body Targets</h3>
         {listoftargets}
+      </div>
+      <div className="list-of-options">
+        <h3 className="sports-title">Body Targets</h3>
+        {listoflevels}
       </div>
 
     </div>

@@ -7,7 +7,7 @@ import TimeTracker from "./components/Timetracker";
 import SleepTracker from "./components/Sleepschedule";
 import Renderdiv from "./components/Renderediv";
 import Sports from "./components/sports";
-
+import SportRec from "./components/SportRec";
 const App = () => {
   // State for storing personal and work habits
   const [personalHabits, setPersonalHabits] = useState([]);
@@ -140,6 +140,7 @@ const App = () => {
     <CardKPI title='Total Steps' content='1298' unit='Kcal' icon="&#128293;"/>
     </div>
     <Sports />
+    <SportRec />
 
     <Renderdiv />
     </>
