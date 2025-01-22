@@ -34,7 +34,7 @@ const TimeTracker = ({ tracking, stopTracking }) => {
   }, [tracking]);
 
   return (
-    <div style={{ padding: "20px", marginBottom: "20px" }} className="container">
+    <div style={{ padding: "20px"}} className="container">
       {tracking ? (
         <>
           <h2>{greeting}</h2>

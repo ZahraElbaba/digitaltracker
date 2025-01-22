@@ -10,7 +10,7 @@ const SleepQuality = ({ duration, idealSleepDuration }) => {
   const sleepQuality = calculateQuality();
 
   return (
-    <div style={{ padding: "20px", border: "1px solid #ccc"}} className="container blue">
+    <div className="container blue">
       <h2>Sleep Quality</h2>
       <p>{sleepQuality.toFixed(2)}%</p>
     </div>

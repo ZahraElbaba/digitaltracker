@@ -33,7 +33,7 @@ const Duration = ({ tracking, startTime,stopTime }) => {
 
 
     return (
-      <div style={{ padding: "20px", border: "1px solid #ccc" }} className="container blue">
+      <div className="container blue">
         <h2>Duration</h2>
         <p>{formatDuration(duration)}</p>
       </div>

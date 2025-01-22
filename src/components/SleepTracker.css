@@ -14,6 +14,7 @@
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.301);
     height: auto;
+    margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px){
     /*For Desktop*/
@@ -46,5 +47,6 @@ button:hover {
 }
 
 .blue{
-   background-color: #7BD3EA;
+    background-color: #7BD3EA;
+    padding: "20px";
 }
