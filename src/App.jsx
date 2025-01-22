@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import HabitList from "./components/HabitList";
 import CardKPI from "./components/card";
 import "./App.css";
-import TimeTracker from "./components/Timetracker";
-import SleepTracker from "./components/Sleepschedule";
 import Renderdiv from "./components/Renderediv";
 import Sports from "./components/sports";
 import SportRec from "./components/SportRec";

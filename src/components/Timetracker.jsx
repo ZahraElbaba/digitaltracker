@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "./SleepTracker.css"
 
 const TimeTracker = ({ tracking, stopTracking }) => {
   const [greeting, setGreeting] = useState("");
   const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
-    if (!tracking) return; // Do not update time if tracking is stopped
+    //if (!tracking) return; // Do not update time if tracking is stopped
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -33,17 +34,21 @@ const TimeTracker = ({ tracking, stopTracking }) => {
   }, [tracking]);
 
   return (
-    <div style={{ padding: "20px", border: "1px solid #ccc", marginBottom: "20px" }}>
+    <div style={{ padding: "20px"}} className="container">
       {tracking ? (
         <>
           <h2>{greeting}</h2>
           <p>{currentTime}</p>
-          <button onClick={stopTracking} style={{ padding: "10px", marginTop: "10px" }}>
+          <button onClick={stopTracking}>
             Stop Tracking
           </button>
         </>
       ) : (
-        <h2>Tracking stopped</h2>
+        <>
+          <h2>{greeting}</h2>
+          <p>{currentTime}</p>
+          <p>Tracking stopped</p>
+        </>
       )}
     </div>
   );

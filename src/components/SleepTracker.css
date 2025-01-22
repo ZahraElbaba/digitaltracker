@@ -1,0 +1,52 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-self: center;
+}
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #A1EEBD;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    height: auto;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px){
+    /*For Desktop*/
+    .main-container{
+        flex-direction: row;
+        gap: 20px;
+        width: 80%;
+    }
+}
+
+button {
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    border: none;
+    padding: 10px 20px;
+    /* Adjust for size */
+    font-size: 16px;
+    /* Adjust for text size */
+    color: #000;
+    /* Adjust for text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    /* Slightly darker shade for hover */
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.blue{
+    background-color: #7BD3EA;
+    padding: "20px";
+}
