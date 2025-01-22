@@ -44,7 +44,11 @@ const TimeTracker = ({ tracking, stopTracking }) => {
           </button>
         </>
       ) : (
-        <h2>Tracking stopped</h2>
+        <>
+          <h2>{greeting}</h2>
+          <p>{currentTime}</p>
+          <p>Tracking stopped</p>
+        </>
       )}
     </div>
   );
