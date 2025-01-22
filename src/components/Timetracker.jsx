@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./SleepTracker.css"
 
 const TimeTracker = ({ tracking, stopTracking }) => {
   const [greeting, setGreeting] = useState("");
@@ -33,12 +34,12 @@ const TimeTracker = ({ tracking, stopTracking }) => {
   }, [tracking]);
 
   return (
-    <div style={{ padding: "20px", border: "1px solid #ccc", marginBottom: "20px" }}>
+    <div style={{ padding: "20px", marginBottom: "20px" }} className="container">
       {tracking ? (
         <>
           <h2>{greeting}</h2>
           <p>{currentTime}</p>
-          <button onClick={stopTracking} style={{ padding: "10px", marginTop: "10px" }}>
+          <button onClick={stopTracking}>
             Stop Tracking
           </button>
         </>
