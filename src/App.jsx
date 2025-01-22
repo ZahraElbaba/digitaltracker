@@ -4,7 +4,7 @@ import HabitList from "./components/HabitList";
 import CardKPI from "./components/card";
 import "./App.css";
 import Renderdiv from "./components/Renderediv";
-
+import Sports from "./components/sports";
 
 const App = () => {
   // State for storing personal and work habits
@@ -137,6 +137,7 @@ const App = () => {
     <CardKPI title='Heart Pulse' content='109' unit='BPM' icon="&#x1F5A4;"/>
     <CardKPI title='Total Steps' content='1298' unit='Kcal' icon="&#128293;"/>
     </div>
+    <Sports />
 
     <Renderdiv />
     </>
