@@ -5,14 +5,18 @@ function CardKPI(props){
     const title=props.title;
     const content=props.content;
     const unit=props.unit;
+    const icon=props.icon;
   return (
     <div className="box-card-container">
-        
-        <img src="" alt={title}></img>
-        <h2 className="title">{title}</h2>
-
-        <span className='hero-content'>{content}</span>
+        <div className='main-title'>
+        <span className="white-strip">{icon}</span>
+        <span className="sec-title">{title}</span>
+        </div>
+        <br></br>
+        <span className="inner-content">
+        <span className='hero-content'>{content} &nbsp;</span> 
         <span className='units-display'>{unit}</span>
+        </span>
 
 
       

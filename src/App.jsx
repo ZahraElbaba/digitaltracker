@@ -135,9 +135,12 @@ const App = () => {
         </div>
       </div>
     </div>
-    <CardKPI title='Pulse' content='109' unit='BPM'/>
-    <h2>Debugging purposes</h2>
-    <CardKPI title='Calories Burnt' content='1298' unit='Kcal'/>
+    <div className="health-section">
+    <CardKPI title='Heart Pulse' content='109' unit='BPM' icon="&#x1F5A4;"/>
+    <CardKPI title='Total Steps' content='1298' unit='Kcal' icon="&#128293;"/>
+    </div>
+
+    <Renderdiv />
     </>
   );
 };
