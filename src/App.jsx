@@ -7,15 +7,15 @@ import Renderdiv from "./components/Renderediv";
 import Sports from "./components/sports";
 import SportRec from "./components/SportRec";
 const App = () => {
-  // State for storing personal and work habits
+  // to make it appear 
   const [personalHabits, setPersonalHabits] = useState([]);
   const [workHabits, setWorkHabits] = useState([]);
   
-  // States for input fields (new habits)
+  // States for input fields its where i can add 
   const [personalHabitInput, setPersonalHabitInput] = useState("");
   const [workHabitInput, setWorkHabitInput] = useState("");
 
-  // Load habits from localStorage when the app first loads
+  //  this step is to be stores in the local storage 
   useEffect(() => {
     const storedPersonalHabits = JSON.parse(localStorage.getItem("personalHabits"));
     const storedWorkHabits = JSON.parse(localStorage.getItem("workHabits"));
