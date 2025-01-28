@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './sports.css'; // Assuming you have a separate CSS file
+import './sports.css'; 
 
 function SportRec() {
   const [type, setType] = useState('');
